@@ -1,0 +1,221 @@
+<!-- la etiqueta mas importante a nivel de dom es DOCTYPE ya que me representa el tipo de documento 
+para que el navegador interprete que es html -->
+<!DOCTYPE html>
+<!-- Es el padre de todas mis etiquetas y tiene un atributo lang (languaje) -->
+<html lang="Es">
+  <!-- en el head (cabecera) vamos a representar los metadatos  y archivos que influyen en el funcionamiento de nuestra pagina  -->
+<head>
+    <!-- Este metadato me permite gracias a charset="UTF-8" a poder tener caracteres especaiels, "ñ", etc -->
+    <meta charset="UTF-8">
+    <!-- Este metadato name="viewport" en la parte de responsive design se pone para que los dispositivos se adapten-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- en el medio ponemos el nombre de la pagina  -->
+    <title>Cristian Cespedes</title>
+<!-- Vamos a hacer el fabicon (el icono de la pestaña de la pagina), href me dice  la ruta de la imagen que quiero mostrar -->
+    <link rel="shortcut icon" href="../subimagen/20160902_153323.jpg" type="image/x -icon">
+
+    <link rel="stylesheet" href="../Desarrollo Web/css/Styles.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2? family = Source + Sans + Pro: ital @ 1 & display = swap "rel =" stylesheet ">
+    <!-- Esta linea es para que 
+    reconozca el .css y de ahi pueda trabajar modificando cosas de index.html. -->
+
+
+    <!-- Este estilo es de forma etiqueta (era para practicar)
+    <style>
+      header {
+           background-color: cyan;
+             } 
+    </style>
+  -->
+
+</head>
+
+ <body>
+<!-- <div class="flexbox">
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+</div> -->
+
+  <header class="Header"> <!--style="background-color: deeppink;" (esto era para practicar)-->
+    <div class="wrapper">
+      <figure class="header-figure">
+        <img  src="../Desarrollo Web/Clase_Uno/Img/logo-negro-500.png" alt="Imagen del Logo"> <!-- esto es para el logo  -->
+      </figure>
+      <nav class="Menu"> 
+        <!-- En ul no es necesario ponerle clase porque tengo uno solo y lo puedo acceder en css como  ".menu ul", ADEMAS SI LE DOY UN ESTILO A UL NO LO VA  A TOMAR A LA ETIQUETA "a" PORQUE TIENE MUCHO VALOR SEMANTICO  -->
+        <ul>
+          <!-- En li no es necesario clase porque es una lista -->
+          <!-- 
+          <li>Hola</li>
+          <li>Por favor</li>                              
+          <li>Ingrese</li>
+          -->
+          <!-- esto es para el texto  -->
+
+          <li><a class="Link" href="#Proyecto" target="_blank">Proyectos</a></li> <!-- ACA GENERO UN TEXTO CON LINK PARA Q ME LLEVE A UNA DIRECCION EN ESTE CASO A GOOGLE -->
+          <li><a class="Link" href="#Experiencia" target="_blank">Experiencias</a></li> <!-- ACA GENERO UN TEXTO CON LINK PARA Q ME LLEVE A UNA DIRECCION EN ESTE CASO A GOOGLE -->
+          <li><a class="Link" href="#Contactame" target="_blank">Contactame</a></li> <!-- ACA GENERO UN TEXTO CON LINK PARA Q ME LLEVE A UNA DIRECCION EN ESTE CASO A GOOGLE -->
+          </ul>
+      </nav>
+    </div>
+</header>
+
+    <section class="Main">  <!-- style="background-color: lawngreen;" (esto era para practicar)--><!-- Empieza aca la "parte de arriba del dibujo" -->
+      <div class="wrapper">
+        <h1 class="Main-title"> <!--style="background-color: lawngreen;font-size: 20px" (esto era para practicar)-->
+        Hola! soy <span>Cespedes Cristian</span> <br> 
+        desarrollador de <span>javascript</span> <br>
+        con amor por la <span>enseñanza</span></h1>
+         <figure class="Main-figure"> 
+          <img src="../Desarrollo Web/Clase_Uno/Img/IMG-20171104-WA0082.jpg" alt="Imagen de Cristian" width="250">
+        </figure>  <!--(LO COMENTO PARA PONER LA IMAGEN A LA DERECHA PERO DESDE CSS, SE PUEDE POR ACA PERO NO LO EXPLICO AÚN) -->
+      </div>      
+    </section><!-- Termina acá el "el de arriba de todo LOGO TXT1 etc... (tiene texto y una imagen) -->
+
+    <!-- Aca empieza "PROYECTO" -->
+    <section class="Projects" id="Proyecto"> <!--style="background-color: indianred;"(esto era para practicar)-->
+      <div class="wrapper">
+        <h2 id="Title">Proyectos</h2>
+        <article class="project">
+        <div class="project-left">
+        <h3 class="project-title">Seguimiento Veola</h3>
+        <h4 class="project-language">Flutter</h4>
+        <p class="project-date"> <strong>Fecha: 20/01/2021</strong></p>
+        <p class="project-link"><a href="#">Proyecto de seguimiento</a></p>
+        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Nesciunt autem vero quidem, ipsam accusantium delectus<br> dignissimos nobis iste dolores temporibus quos illo architecto<br> minus consequuntur ducimus? Quas veritatis odio cum!</p>
+        </div>
+        <figure class="project-container_right" >
+          <img class="project-image" src="../Desarrollo Web/Clase_Uno/Img/layer1_persona-o5fuz6dxexq1e4546ynniv20nr0ntf965611phubh6.png" alt="Proyecto" >
+        </figure>
+        </article>
+      </div>
+    </section>
+<!-- Aca termina "PROYECTO" -->
+
+<section class="Projects" id="Proyecto">
+  <!-- <h2 id="Title">Proyectos</h2> -->
+  <div class="wrapper">
+    <article class="project">
+    <div class="project-left">
+    <h3 class="project-title">Seguimiento Veola</h3>
+    <h4 class="project-language">Flutter</h4>
+    <p class="project-date"><strong>Fecha:24/02/2021</strong></p>
+    <p class="project-link"><a href="#">Proyecto de seguimiento</a> </p>
+    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Nesciunt autem vero quidem, ipsam accusantium delectus<br> dignissimos nobis iste dolores temporibus quos illo architecto<br> minus consequuntur ducimus? Quas veritatis odio cum!</p>
+    </div>
+    <figure class="project-container_right">
+    <img class="project-image" src="../Desarrollo Web/Clase_Uno/Img/layer1_persona-o5fuz6dxexq1e4546ynniv20nr0ntf965611phubh6.png" alt="Proyecto">
+    </figure>
+    </article>
+  </div>
+</section>
+
+<!-- Aca empieza "Experiencia" -->
+
+<h2 class="experience-title-main">Experiencia</h2>
+
+
+<section class="experiences" id="experiencia"> <!--style="background-color: dimgray;"(esto era para practicar)-->
+  <div class="wrapper">
+    <article class="experience">
+          <figure class="experience-container image">
+            <img class="experience-image" src="../Desarrollo Web/Clase_Uno/Img/Experiencia.jpg" alt="Experiencia laboral">
+          </figure>
+          <div class="experience-down">
+            <h3 class="experience-title">Gastronomia</h3>
+            <p class="experience-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, explicabo debitis delectus nam dignissimos, temporibus atque mollitia hic repellat, officiis veritatis odio quibusdam vitae minima tempora! Nesciunt ullam quo nam? <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ea at similique dolorem accusamus voluptas laborum natus expedita autem, voluptates aspernatur porro sint itaque repellendus aperiam repudiandae ipsam earum. Blanditiis?</p>
+            <input type="submit" value="Enviar">
+          </div>
+        </article>
+
+        <article class="experience">
+          <figure class="experience-container image">
+            <img class="experience-image" src="../Desarrollo Web/Clase_Uno/Img/Experiencia.jpg" alt="Experiencia laboral" >
+          </figure>
+          <div class="experience-down">
+            <h3 class="experience-title">Gastronomia</h3>
+            <p class="experience-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, explicabo debitis delectus nam dignissimos, temporibus atque mollitia hic repellat, officiis veritatis odio quibusdam vitae minima tempora! Nesciunt ullam quo nam? <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ea at similique dolorem accusamus voluptas laborum natus expedita autem, voluptates aspernatur porro sint itaque repellendus aperiam repudiandae ipsam earum. Blanditiis?</p>
+            <input type="submit" value="Enviar">
+          </div>
+        </article>
+
+        <article class="experience">
+          <figure class="experience-container image">
+            <img class="experience-image" src="../Desarrollo Web/Clase_Uno/Img/Experiencia.jpg" alt="Experiencia laboral" >
+          </figure>
+          <div class="experience-down">
+            <h3 class="experience-title">Gastronomia</h3>
+            <p class="experience-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, explicabo debitis delectus nam dignissimos, temporibus atque mollitia hic repellat, officiis veritatis odio quibusdam vitae minima tempora! Nesciunt ullam quo nam? <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ea at similique dolorem accusamus voluptas laborum natus expedita autem, voluptates aspernatur porro sint itaque repellendus aperiam repudiandae ipsam earum. Blanditiis?</p>
+            <input type="submit" value="Enviar">
+          </div>
+        </article>
+        
+        <article class="experience">
+          <figure class="experience-container image">
+            <img class="experience-image" src="../Desarrollo Web/Clase_Uno/Img/Experiencia.jpg" alt="Experiencia laboral" >
+          </figure>
+          <div class="experience-down">
+            <h3 class="experience-title">Gastronomia</h3>
+            <p class="experience-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, explicabo debitis delectus nam dignissimos, temporibus atque mollitia hic repellat, officiis veritatis odio quibusdam vitae minima tempora! Nesciunt ullam quo nam? <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ea at similique dolorem accusamus voluptas laborum natus expedita autem, voluptates aspernatur porro sint itaque repellendus aperiam repudiandae ipsam earum. Blanditiis?</p>
+            <input type="submit" value="Enviar">
+          </div>
+        </article>
+
+     <!--  <h3>Desarrollador web</h3>
+      <article class="experience-right">
+        <div class="expierence-right_down">
+          <figure class="experience-right_container-image">
+            <img class="experience-right_image" src="../Desarrollo Web/Clase_Uno/Img/exp1.jpg" alt="Experiencia informática" width="285">
+          </figure>
+          <p class="experience-right_description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, officia nobis maiores ipsam magnam repudiandae aut odio hic et pariatur ullam praesentium, velit ducimus voluptas fuga vero magni, sapiente minus.<br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis eius non alias cumque eveniet similique laboriosam eos, nostrum id qui eligendi voluptatem, quas ullam, dicta inventore autem incidunt dignissimos deserunt?</p>
+          <input type="submit" value="Enviar">
+        </div>
+      </article> -->
+      </div>
+    </section>
+
+      <!-- Aca termina "EXPERIENCIA" -->
+
+
+      <!-- Aca empieza el formulario -->
+    <section class="contact" id="Contactame"> <!--style="background-color: darkorange;"(esto era para practicar)-->
+      <div class="wrapper">
+        <div class="contact-description">
+        <h2>¿Creamos algo?</h2>
+        <form action="" class="contact-email">
+        <input type="text" placeholder="" value="@gmail.com">
+        </form>
+        <button>Enviar</button> 
+      </div>
+
+        <div class="contact-imagenes">
+         <a href="#" class="redes-link instagram"> <img class="imagen" src="../Desarrollo Web/Clase_Uno/Img/instagram.png" alt="instagram"></a>
+          <a href="#" class="redes-link twitter">   <img class="imagen" src="../Desarrollo Web/Clase_Uno/Img/twitter.png" alt="twitter"></a>
+          <a href="#" class="redes-link facebook">  <img class="imagen" src="../Desarrollo Web/Clase_Uno/Img/facebook.png" alt="facebook"></a>
+        </div>
+      </div>  
+    </section>
+    <!-- Aca termina el formulario -->
+  
+    <!-- Aca empieza el pie de pagina -->
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-details">
+        <p>Curso de desarrollo web</p>  
+        <img src="Clase_Uno/Img/logo-mepng.png" alt="">
+        </div>
+        <p class="footer-txt">Diseñado por Cespedes Cristian 🍕 🗻 </p>
+      </div>  
+    </footer> <!-- PARA EL PIE DE PAGINA DEBE IR OTRA ETIQUETA EN ESTE CASO "FOOTER" -->
+<!--
+   <a href="Content/Hola.html">Hola</a> 
+   esto es practica para pagina externa( en la carpeta creada content tiene una nueva pagina)
+-->
+
+</body>
+</html>

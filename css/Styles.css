@@ -1,0 +1,537 @@
+
+    /*esto es selector descendente */
+  /*  
+   header nav ul li a{
+       background-color: rgb(222, 177, 135);
+   }
+   */
+
+
+   /* Esto es selector ID o Clase 
+   .Link{
+       color: rgb(189, 30, 210);
+   }
+
+   .Link2{
+       color: rgb(61, 121, 139);
+   }
+
+   .Link2{
+       background-color: rgb(255, 135, 105);
+   }
+  */
+
+
+
+
+
+/* COLOR DE TITULOS */
+/* #Title{
+    color: red;
+}
+ */
+/*---------------------------------------------------------------------------------------------------*/
+
+ 
+/*LETRA DE TITULOS*/
+/* h2,h3,h4,h5,h6{
+    font-family: 'Fjalla One', sans-serif;
+} */
+
+/*---------------------------------------------------------------------------------------------------*/
+
+
+/*LETRA EN GENERAL DE TODO LOS TEXTOS MENOS LOS TITULOS*/
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
+  }
+
+/*---------------------------------------------------------------------------------------------------*/
+
+
+/*ARRANCAMOS EN LA PARTE DEL HEADER*/
+.Header{
+    margin: 0;
+    background-color: #8f4068;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.header-figure{
+    width: 300px;
+    margin: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-figure img{
+    width: 150px;
+    height: 90px;
+    margin: 0;
+    /* padding-left: 0px; */ 
+}
+
+.Menu{
+    height: inherit;
+}
+
+.Menu ul{
+    height: inherit;
+    list-style: none;
+    margin:0;
+    padding:0;
+    display: flex;
+}
+
+.Menu ul li{
+    height: inherit;
+    
+}
+
+.Link{
+    height: inherit;
+    text-decoration:none;
+    color: white;
+    margin: 0;
+    display: flex;       /* esto hizo falta para que se centrara, ademas de que le tuve q poner alto a todos sus padres y al hijo mismo */
+    align-items: center; 
+    vertical-align: middle;
+    padding: 0px 10px;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+
+/*ARRANCAMOS EN LA PARTE DE MAIN*/
+
+.Main{
+    background-color:#8f4068;
+    height: 300px;
+    /* background-size: 350px 350px;
+    background-image: url(../Clase_Uno/Img/IMG-20171104-WA0082.jpg); 
+    background-position-x: right;
+    background-repeat: no-repeat;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+
+.Main-title{
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+h1{
+   line-height: 1.5em;
+   font-size: 30px; 
+   color: white;
+   font-style: italic;
+   letter-spacing: -1px;
+   text-transform: capitalize;
+   margin: 0;
+}
+.Main span{
+    color:#2a69a3;
+}
+
+.Main-figure{
+    margin: 0;
+    width: 300px;
+    height: inherit;
+}
+
+.Main-figure img{
+    width: inherit;
+    height: inherit;
+}
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+
+
+/*ARRANCAMOS EN LA PARTE DE PROYECTO*/
+
+.Projects{
+
+    padding: 0 0px 10px 30px;
+    background-color: #744bc545;
+}
+
+.project{
+    margin: 0px ;
+    border: gray 3px solid;
+    border-top:black 5px solid;
+    border-radius: 10px;
+    box-shadow: 5px 0px 15px black;  
+    background-color: whitesmoke;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.project-container_right{
+    width: 500px;
+}
+
+.project-image{
+    width: inherit;
+}
+
+.project-left{
+    width: 500;
+    margin: 0px 20px ;
+    height: inherit;
+    align-items: center;
+}
+
+h2{
+    margin: 0;
+    padding: 30px 0px;
+    text-transform: uppercase;
+    color: #005086;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: oblique;
+    font-weight:900;
+}
+
+.project-title{
+    margin: 0;
+    font-size: 20px;
+    padding: 20px 0 0 0;
+    margin-bottom: 10px;
+}
+
+.project-language{
+    margin-top: 20px;
+}
+.project-date{
+    margin-top: 20px;
+}
+.project-link{
+    margin-top: 20px;
+}
+.project-link a{
+    text-decoration:none ;
+    color: black;
+    font-weight: 900;
+    font-style: italic;
+
+}
+.project-description{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+
+/* ARRANCAMOS CON LA PARTE DE EXPERIENCIA */
+
+.experience-title-main{
+    padding-left: 30px;
+    background-color:rgb(230, 207, 228);
+   
+}
+
+.experiences{
+    padding-left: 30px;
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    background-color: rgb(230, 207, 228);
+    justify-content: space-between;
+}
+
+
+.experience{
+    border: 1px solid olivedrab;
+    margin: 0 20px 30px 0;
+    padding:0 0 40px 0 ;
+    width: 550px;
+    border-radius:10px ;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: #f4fbff;
+    
+}
+
+.experience-container.image{
+    margin: 0;
+    width: inherit;
+    height: 200px;
+    
+}
+
+.experience-image{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+.experience-down{
+    margin: 25px ;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.experience-title{
+    margin: 0;
+}
+
+.experience-description{
+    text-align: left;
+}
+
+.experience-down input{
+    border: 1px solid #005086;
+    padding: 10px 25px;
+    cursor:pointer;
+    border-radius: 5px;
+    color: #005086;
+}
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+
+/* ARRANCAMOS LA PARTE DEL FOOTER */
+
+.footer{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8d75cf;
+    padding:10px 30px;
+}
+.footer-details{
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.footer-details img{
+    height: 50px;
+    width: 50px;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+
+/*ARRANCAMOS CON LA PARTE DE CONTACTAME*/
+
+.contact{
+    background-color: rgb(255, 244, 197);
+    display: flex;
+    padding: 30px 30px 30px 30px;
+    justify-content: space-between;
+}
+
+.contact-description{
+    /* margin-left: 30px; */
+}
+
+.contact-description h2{
+    padding: 0px;
+}
+
+.contact-email input{
+    padding: 5px 5px 5px 35px; 
+    border-color: gray;
+    border-radius: 5px;  
+    background-image: url(../Clase_Uno/Img/sobre.jpg); 
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    outline: none;
+    margin-top: 15px;
+}
+
+.contact-description button{
+    border: 1px solid blue;
+    padding: 5px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.contact-imagenes{
+    margin: 0;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly ;
+}
+
+.imagen{
+    width: 50px;
+    height: 50px;
+    /* margin: 0 5px; */
+}
+
+
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+
+/* ARRANCAMOR CON EL WRAPPER (EL CONTENEDOR DE  LO QUE TIENE CADA SECCION) */
+
+.wrapper{
+    /* border: 10px solid blue; */
+    width: 1250px;
+    height: inherit;
+    /* margin: 0px auto; */
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    flex-wrap: inherit;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ANALIZAMOS LOS MARGENES*/
+
+/* ul{
+    margin: 0px;
+}
+
+h1,h2,h3{
+    margin: 0px;
+}
+
+
+.project-left{
+    margin:30px auto; 
+}
+.project-container_right{
+    margin: 30px auto;
+}
+
+header figure{
+    margin: 0px;
+}
+
+body{
+    margin:0px ;    
+}*/
+
+/*al body le saque los margenes asi los elementos quedan pegaditos al navegador*/
+/* -------------------------------------------------------------------------------------------------- */
+/*ANALIZMOS PADDING*/
+/* .project{
+    padding: 20px 20px ;
+}
+
+h2,h3{
+    padding: 20px;
+}
+
+ */
+/* -------------------------------------------------------------------------------------------------- */
+
+/*MODELO DE CAJAS (le ponemos ancho a los elementos "padres"))*/
+/*  .project-container_right{
+    width: 500px;
+}
+
+.project-image{
+    width: inherit;
+}
+
+.project-image{
+    box-sizing: border-box;
+    padding: 20px 20px;
+    border: blueviolet 2px solid;
+} 
+ */
+
+/*MODELOS DE CAJAS jugando con EJEMPLOS de cuadrados*/
+/* .flexbox{
+height: 500px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+ align-items: center;
+justify-content: center; 
+
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    border: 2px solid blue;
+    flex-shrink:0;
+} */
+
+/* .box:nth-of-type(1){
+    margin-top: 20px;
+}
+
+.box:nth-of-type(4){
+    margin-bottom: 20px;
+} */
+
+/* .box{
+    justify-content: flex-start;
+    align-items: flex-end;
+} */
+
+/* -------------------------------------------------------------------------------------------------- */
